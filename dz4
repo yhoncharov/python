@@ -1,0 +1,32 @@
+def f(a):
+    if a == 0: return 
+    else:
+        if a%2: print('no',a)        
+    f(a-1)
+
+f(15)
+
+
+def fa(a):
+    if a == 0: return 
+    else:
+        if a%2==0: print('yes',a)        
+    fa(a-1)
+
+fa(15)
+
+
+
+
+
+m = int(input("m"))
+#print("m {0}".format(m) )
+
+if (m == 1 or m == 2 or m == 12): print("You were born in winter.")
+elif (m == 3 or m == 4 or m == 5): print("You were born in spring.")
+elif (m == 6 or m == 7 or m == 8): print("You were born in summer.")
+elif (m == 9 or m == 10 or m == 11): print( "You were born in autumn.")
+else: print("This is not a month")
+
+
+
