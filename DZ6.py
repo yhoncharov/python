@@ -149,11 +149,11 @@ def name_to_number():
     
     name=input()
     
-    if name == "rock": return 1
-    elif name == "Spock": return 2
-    elif name == "paper": return 3
-    elif name == "lizard": return 4
-    elif name == "scissors": return 5
+    if name == "rock": return 0
+    elif name == "Spock": return 1
+    elif name == "paper": return 2
+    elif name == "lizard": return 3
+    elif name == "scissors": return 4
     else: print ('wrong name')
 
 
@@ -162,7 +162,7 @@ def new_game():
     my = int(name_to_number())
     #my=int(input())
     if ((comp > my) and ((my+1)==comp or (my+2)==comp)) or ((comp < my) and ((comp-1)==my or (comp-2)==my) or (comp+2) < my):
-        print("conp win!")
+        print("comp win!")
     else: print("you win!")    
     return
 
